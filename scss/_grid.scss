@@ -1,0 +1,79 @@
+.grid-container {
+    display: grid;
+    width: 90%;
+    height: 950px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-auto-flow: dense;
+    align-items: stretch;
+    transition: 0.5s all;
+    position: relative;
+    @include mq-max(800px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+
+.grid-item {
+    transition: 0.5s all;
+    position: relative;
+    overflow: auto;
+    box-sizing: padding-box;
+}
+
+.grid-item__button {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background: transparent;
+    color: #333333;
+    opacity: 0.8;
+    transition: 0.3s all;
+    &:hover {
+        color: #111111;
+        opacity: 1;
+        transition: 0.3s all;
+    }
+    &--delete {
+        top: 1.5rem;
+        right: 0.5rem;
+    }
+    &--apply {
+        display: block;
+        position: static;
+        margin: 1rem auto;
+    }
+}
+
+.grid-item__options {
+    padding: 3rem 1rem 1rem 1rem;
+    @include mq-max(800px) {
+        padding-top: 4rem;
+    }
+}
+
+.grid-item__label {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #111111;
+}
+
+.grid-item__input {
+    display: block;
+    width: 40%;
+    height: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    border: 1px solid #000000;
+    @include mq-max(800px) {
+        width: 80%;
+    }
+}

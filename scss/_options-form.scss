@@ -1,0 +1,47 @@
+.options-form {
+    margin: 0rem auto 0 auto;
+    width: 50%;
+    padding: 1rem 2.5%;
+    @include mq-max(800px) {
+        width: 90%;
+    }
+}
+
+.options-form__fieldset {
+    border: none;
+    text-align: center;
+    display: block;
+}
+
+.options-form__legend {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.options-form__label {
+    text-align: center;
+    display: block;
+    margin: 0.5rem;
+}
+
+.options-form__input, .options-form__select {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid black;
+    @include mq-max(800px) {
+        width: 90%;
+    }
+}
+
+.options-form__select {
+    width: 53%;
+    padding: 0.4rem 0.5rem;
+}

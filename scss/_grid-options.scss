@@ -1,0 +1,140 @@
+.grid-options {
+    position: relative;
+    height: 0;
+    width: 80%;
+    transition: 0.5s all;
+    overflow: hidden;
+    @include flex-column;
+    &--expanded {
+        height: 700px;
+        transition: 0.5s all;
+        @include mq-max(800px) {
+            height: 800px;
+        }
+    }
+}
+
+.grid-options__controls {
+    width: 90%;
+    margin: 1rem 0 2rem 0;
+    @include flex-center-row;
+    justify-content: space-between;
+    height: 3rem;
+    @include mq-max(800px) {
+        flex-direction: column;
+        height: 150px;
+    }
+}
+
+.grid-options__button {
+    cursor: pointer;
+    background: none;
+    border: 1px solid black;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    transition: 0.3s all;
+    &:hover {
+        transition: 0.3s all;
+        background-color: #111111;
+        color: #ffffff;
+    }
+    &--add {
+        padding: 0 2rem 0 0;
+    }
+    &--help {
+        padding: 0 1rem 0 0;
+    }
+    &--options {
+        padding: 0 1rem 0 0;
+    }
+    @include mq-max(800px) {
+        margin: 1rem 0;
+    }
+    &--apply {
+        margin: 0 auto;
+        padding: 0 0 0 1rem ;
+    }
+}
+
+.grid-options__help-box {
+    position: fixed;
+    z-index: 20;
+    top: -300vh;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0,0,0, 0.7);
+    transition: 0.5s all;
+    &--visible {
+        top: 0;
+        transition: 0.5s all;
+    }
+}
+
+.grid-options__article {
+    width: 90vw;
+    max-height: 90vh;
+    margin: 5vh auto;
+    background-color: rgba(255,255,255,0.9);
+    @include flex-column;
+    padding: 0 5rem 2rem 5rem;
+    position: relative;
+    overflow-y: auto;
+    @include mq-max(800px) {
+        padding: 0 2rem 1rem 2rem;
+    }
+}
+
+.grid-options__close-modal {
+    cursor: pointer;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333333;
+    @include mq-max(800px) {
+        top: 1rem;
+    }
+}
+
+.grid-options__title {
+    font-size: 2rem;
+    text-align: center;
+    @include mq-max(800px) {
+        margin-top: 5rem;
+    }
+}
+
+.grid-options__subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0.5rem 2rem;
+    @include mq-max(800px) {
+        margin: 0.5rem 1rem;
+    }
+}
+
+.grid-options__paragraph {
+    font-size: 1.4rem;
+    margin: 0.3rem 2rem;
+    @include mq-max(800px) {
+        margin: 0.5rem 1rem;
+    }
+    &--last {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    &--italic {
+        font-style: italic;
+    }
+}
+
+.grid-options__code {
+    display: inline;
+    font-size: 1.4rem;
+    margin: 0.3rem;  
+    background-color: rgb(210,210,210);
+}

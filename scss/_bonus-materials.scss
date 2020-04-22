@@ -1,0 +1,33 @@
+.bonus-materials {
+    @include flex-center-column;
+    margin-top: 1rem;
+    @include mq-max(800px) {
+        margin-top: 2rem;
+    }
+}
+
+.bonus-materials__title {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.bonus-materials__description {
+    margin-top: 0;
+    @include mq-max(800px) {
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+        padding: 0 1rem;
+        text-align: center;
+    }
+}
+
+.bonus-materials__link {
+    display: block;
+    color: #333333;
+    @include mq-max(800px) {
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+        padding: 0 1rem;
+        text-align: center;
+    }
+}
