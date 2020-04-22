@@ -1,6 +1,6 @@
 FunGrid CSS
 
-It's a little web app that I've made while I was learning CSS Grid .You can interactive to try and see what Grid can really do, so here it is - FunGrid. https://hyraze.github.io/FunGrid/app/
+It's a little web app that I've made while I was learning CSS Grid .You can interactive to try and see what Grid can really do, so here it is - FunGrid. https://hyraze.github.io/FunGrid/
 
 Right now you can:
 - add or delete grid items, 
