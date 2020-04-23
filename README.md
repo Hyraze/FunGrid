@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">Welcome to FunGrid 👋</h1>
 <p>
   <a href="https://github.com/Hyraze/FunGrid#readme" target="_blank">
@@ -15,6 +16,11 @@
 ### 🏠 [Homepage](https://github.com/Hyraze/FunGrid#readme)
 
 ### ✨ [Demo](https://hyraze.github.io/FunGrid/)
+=======
+FunGrid CSS
+
+It's a little web app that I've made while I was learning CSS Grid .You can interactive to try and see what Grid can really do, so here it is - FunGrid. https://hyraze.github.io/FunGrid/
+>>>>>>> dadd7bf3e29b7b9e95296f91a76c486630407ad8
 
 Right now you can:
 - add or delete grid items, 
