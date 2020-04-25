@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1 align="center">Welcome to FunGrid 👋</h1>
 <p>
   <a href="https://github.com/Hyraze/FunGrid#readme" target="_blank">
