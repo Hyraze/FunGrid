@@ -10,7 +10,7 @@
     <img alt="Twitter: Hanishrao" src="https://img.shields.io/twitter/follow/Hanishrao.svg?style=social" />
   </a>
 </p>
-> A playground to understand the Grid concept.
+ A playground to understand the Grid concept.
 
 ### 🏠 [Homepage](https://github.com/Hyraze/FunGrid#readme)
 
